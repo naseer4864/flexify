@@ -318,3 +318,15 @@ form > .form-add {
 .sign-out{
   cursor: pointer;
 }
+
+@media screen and (max-width:768px) {
+  .account-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .account-container {
+    width: 90%;
+  }
+}
