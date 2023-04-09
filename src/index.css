@@ -1,4 +1,4 @@
- *{
+* {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
@@ -15,14 +15,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  margin: 0px 20px; 
+  margin: 0px 20px;
 }
 
 .movie-section {
   width: 100%;
   height: fit-content;
   margin: 0% 0px;
-  
 }
 
 .movie-section > h1 {
@@ -74,14 +73,13 @@ img {
 }
 
 .overview > p {
-  padding: 10px;
+  padding: 10px 5px;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .overview > p {
     font-size: 0.8rem;
   }
-  
 }
 
 .banner {
@@ -103,14 +101,12 @@ img {
   gap: 10px;
   flex-direction: column;
   margin: 0% 20px;
-  /* background-color: black; */
   position: absolute;
   top: 30%;
-  
-  
 }
+
 .banner-info > h2 {
-color: white;
+  color: white;
 }
 
 .banner-btn {
@@ -123,25 +119,22 @@ color: white;
 .banner-btn > button {
   padding: 10px 15px;
   cursor: pointer;
-  
 }
-
 
 .banner-btn button:nth-child(1) {
   background-color: white;
-  color:  black;
+  color: black;
   border: none;
   outline: none;
 }
 
 .banner-btn button:nth-child(2) {
   background-color: black;
-  color:  white;
+  color: white;
   border: 1px solid white;
   outline: none;
   opacity: 0.5;
 }
-
 
 .banner-info > h4 {
   color: gray;
@@ -149,18 +142,25 @@ color: white;
 
 .banner-overview {
   width: 40%;
-  
 }
 
 .banner-overview > p {
   color: white;
   line-height: 1.2;
-  
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .banner-overview {
-    width: 90%;
+    width: 98%;
+  }
+
+  .banner-overview > p {
+    padding-bottom: 15px;
+  }
+
+  .banner-info {
+    position: absolute;
+    bottom: 30%;
   }
 }
 
@@ -184,7 +184,7 @@ color: white;
   font-weight: bolder;
 }
 
-.auth-nav{
+.auth-nav {
   margin-right: 20px;
   display: flex;
 }
@@ -236,7 +236,6 @@ form > input {
   padding-left: 10px;
   border: 1px solid blue;
   outline: none;
-  
 }
 
 form > button {
@@ -263,7 +262,6 @@ form > .form-add {
   align-items: center;
   justify-content: space-between;
   margin: 10px 0px;
-
 }
 
 .form-add > button {
@@ -281,16 +279,16 @@ form > .form-add {
   color: white;
 }
 
-.form-add > span > a{
+.form-add > span > a {
   color: white;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   form {
     width: 60%;
   }
 }
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   form {
     width: 90%;
   }
@@ -306,7 +304,7 @@ form > .form-add {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color:black; 
+  background-color: black;
   opacity: 0.7;
   gap: 10px;
 }
@@ -315,17 +313,17 @@ form > .form-add {
   color: white;
   margin: 20px 0px;
 }
-.sign-out{
+.sign-out {
   cursor: pointer;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .account-container {
     width: 50%;
   }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .account-container {
     width: 90%;
   }
