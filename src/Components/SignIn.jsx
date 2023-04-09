@@ -1,6 +1,6 @@
 import { createGoogleUserAuth, signInUserwithEandP } from "../firebase/firebase";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/firebase.context"
 import { useContext } from "react";
 
@@ -25,6 +25,7 @@ const SignIn = () => {
     const handleOnchange = (event) => {
         const { name, value } = event.target;
         setFormfield({ ...formfield, [name]: value })
+        setError(false)
     }
     const logUser = async () => {
         await createGoogleUserAuth();
@@ -81,7 +82,7 @@ const SignIn = () => {
                 <p onClick={handleResetPasword}>Forgotten passwords ?</p>
                 <div className="form-add">
                     <button onClick={logUser}>Sign in with Google</button>
-                    <span>don't have an account? <a href="/SignUp">Sign Up</a> </span>
+                    <span>don't have an account? <Link to="/SignUp" className="a">Sign Up</Link> </span>
                 </div>
             </form>
         </div>

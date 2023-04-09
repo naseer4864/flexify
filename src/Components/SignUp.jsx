@@ -47,8 +47,8 @@ const SignUp = () => {
 
     const handleOnchange = (event) => {
         const { name, value } = event.target;
-
         setFormField({ ...formField, [name]: value })
+        setError(false)
     }
 
     // const handleClick = () => {

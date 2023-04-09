@@ -19,6 +19,7 @@ const PasswordReset = () => {
   const handleOnchange = (event) => {
     const { name, value } = event.target;
     setFormField({ ...formFeild, [name]: value })
+    setError(false)
   }
 
   const handlePasswordReset = async (event) => {
@@ -43,7 +44,7 @@ const PasswordReset = () => {
   return (
     <div className="auth-container">
     <form onSubmit={handlePasswordReset}>
-      <p>Enter the Eamil Associated with your account</p>
+      <p>Enter your Eamil</p>
       <input required type="email" onChange={handleOnchange} value={email} name="email" placeholder="Email"/>
       <p style={{color:"red"}}>{error}</p>
       <button type="submit">Reset Password</button>
