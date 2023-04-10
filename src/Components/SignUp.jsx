@@ -20,7 +20,7 @@ const SignUp = () => {
     const {currentUser} = useContext(UserContext)
     const navigate = useNavigate();
 
-
+console.log(formField)
     const resetForm = () => {
         setFormField(defaultformField)
     }
@@ -64,12 +64,10 @@ const SignUp = () => {
         <div className="auth-container">
            <form onSubmit={handleOnsubmit}>
                 <h1>Sign up</h1>
-                <input type="text" placeholder="Full Name" name="displayName" value={displayName} onChange={handleOnchange} />
-                <span className="error">{error}</span>
+                <input type="text" required placeholder="Full Name" name="displayName" value={displayName} onChange={handleOnchange} />
                 <input type="text"  placeholder="Email" name="email" value={email} onChange={handleOnchange}/>
-                <span className="error">{error}</span>
-                <input type="password" placeholder="Password" />
-                <input type="password" placeholder="confirm Password" name="confirmPassword" value={confirmPassword} onChange={handleOnchange} />
+                <input type="password" required placeholder="Password" name="password" value={password} onChange={handleOnchange} />
+                <input type="password" required placeholder="confirm Password" name="confirmPassword" value={confirmPassword} onChange={handleOnchange} />
                 <span className="error">{error}</span>
                 <button type="submit">Sign Up</button>
             </form>

@@ -21,7 +21,11 @@ const Navbar = () => {
           ) : (
             <Link to="SignIn" className="link">Sign In</Link>
           )}
-                <Link to="SignUp" className="links">Sign Up</Link>
+
+          {currentUser ? (<span className="link"><marquee behavior="smooth" direction="left">{currentUser.displayName}</marquee></span>) : 
+          <Link to="SignUp" className="links">Sign Up</Link>
+          }
+                
             </div>
         </div>
         <Outlet/>

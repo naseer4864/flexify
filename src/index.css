@@ -195,13 +195,13 @@ img {
 }
 
 .auth-nav {
-  margin-right: 20px;
+  margin-right: 5px;
   display: flex;
 }
 
 .link {
   color: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .links {
@@ -336,5 +336,8 @@ form > .form-add {
 @media screen and (max-width: 650px) {
   .account-container {
     width: 90%;
+    padding: 10px 10px;
   }
 }
+
+
