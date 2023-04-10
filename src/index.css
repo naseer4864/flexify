@@ -110,9 +110,9 @@ img {
   align-items: flex-start;
   gap: 10px;
   flex-direction: column;
-  margin: 0% 20px;
+  margin: 0px 20px;
   position: absolute;
-  top: 30%;
+  bottom: 40%;
 }
 
 .banner-info > h2 {
@@ -161,16 +161,18 @@ img {
 
 @media screen and (max-width: 768px) {
   .banner-overview {
-    width: 98%;
+    width: 100%;
   }
-
-  .banner-overview > p {
-    padding-bottom: 15px;
-  }
-
   .banner-info {
     position: absolute;
-    bottom: 30%;
+    bottom: 50%;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .banner-info {
+    position: absolute;
+    bottom: 40%;
   }
 }
 
@@ -205,8 +207,8 @@ img {
 }
 
 .links {
-  padding: 10px 20px;
-  color: black;
+  padding: 10px 15px;
+  color: white;
   border-radius: 5px;
   background-color: brown;
 }
