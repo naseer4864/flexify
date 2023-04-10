@@ -187,7 +187,7 @@ img {
 }
 
 .home {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .logo {
@@ -199,17 +199,20 @@ img {
 .auth-nav {
   margin-right: 5px;
   display: flex;
+  gap: 5px;
 }
 
 .link {
   color: white;
   padding: 10px 10px;
+  background-color: brown;
+  border-radius: 3px;
 }
 
 .links {
   padding: 10px 15px;
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: brown;
 }
 

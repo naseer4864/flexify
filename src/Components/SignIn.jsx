@@ -82,7 +82,7 @@ const SignIn = () => {
                 <p onClick={handleResetPasword}>Forgotten passwords ?</p>
                 <div className="form-add">
                     <button onClick={logUser}>Sign in with Google</button>
-                    <span>don't have an account? <Link to="/SignUp" className="a">Sign Up</Link> </span>
+                    <span>don't have an account? <Link to="/SignUp" className="a">Register</Link> </span>
                 </div>
             </form>
         </div>

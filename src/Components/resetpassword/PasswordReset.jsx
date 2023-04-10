@@ -46,8 +46,8 @@ const PasswordReset = () => {
     <form onSubmit={handlePasswordReset}>
       <p>Enter your Eamil</p>
       <input required type="email" onChange={handleOnchange} value={email} name="email" placeholder="Email"/>
-      <p style={{color:"red"}}>{error}</p>
       <button type="submit">Reset Password</button>
+      <p style={{color:"red"}}>{error}</p>
     </form>
     </div>
   );
