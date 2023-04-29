@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./context/firebase.context";
+import 'normalize.css'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
